@@ -9,39 +9,26 @@
 }
 
 /* Style for the previous and next buttons */
-.prev, .next {
+.next {
     cursor: pointer;
     position: absolute;
-    bottom: 10px;
+    bottom: 180px;
+    left: 60px;
+    padding: 10px 45px;
+    text-decoration: underline;
+    color: blue;
+    transition: background-color 0.3s ease;
+}
+
+.prev{
+    cursor: pointer;
+    position: absolute;
+    bottom: 180px;
     left: 10px;
     padding: 10px 15px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    background-color: blue;
-    border: none;
-    border-radius: 5px;
+    color: blue;
     text-decoration: underline;
     transition: background-color 0.3s ease;
+    
 }
 
-.prev:hover, .next:hover {
-    background-color: #0056b3; /* Darker shade of blue on hover */
-    text-decoration: underline;
-}
-
-/* Style for the dots */
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.3s ease;
-}
-
-.active, .dot:hover {
-    background-color: #717171;
-}

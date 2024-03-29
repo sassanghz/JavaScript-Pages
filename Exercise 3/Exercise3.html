@@ -1,0 +1,69 @@
+<!--Date: 2024/03/20-->
+<!--Exericse 3: Assignment 2-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3 - Assignment 2</title>
+    <script src="Exercise3.js"></script>
+</head>
+<body>
+    <h3>Add Numbers:</h3>
+    <div id="add"></div>
+
+    <h3>Find the maximum number:</h3>
+    <p id="max"></p>
+
+    <h3>Find the only numbers:</h3>
+    <p id="onlyNum"></p>
+
+    <h3>Find the number:</h3>
+    <p id="findNum"></p>
+
+    <h3>Find the reverse string:</h3>
+    <p id="reverseStr"></p>
+
+    <h3>Find the date:</h3>
+    <p id="date"></p>
+
+    <script>
+        // Add Numbers
+        const arryNum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+        document.getElementById("add").innerHTML = "A. The sum of the array is: " + addNum(arryNum);
+
+        // Find the maximum number
+        const maxNumber = maxNum(arryNum);
+        
+        document.getElementById("max").innerHTML = "B. The maximum number in the array is: " + maxNumber;
+
+        // Add only numbers
+        const arry = [4, 5, "3.0 birds", true, "birds2"];
+        
+        const addedNum = onlyNum(arry);
+        
+        document.getElementById("onlyNum").innerHTML = "C. The only numbers in the array are: " + addedNum;
+
+        // Find the number
+        const str = "The number is 462735682";
+
+        const findNumber = findNum(str);
+
+        document.getElementById("findNum").innerHTML = "D. The number in the string is: " + findNumber;
+
+        // Find the reverse string
+        const str1 = "See you later";
+
+        const reverseString = reverseStr(str1);
+
+        document.getElementById("reverseStr").innerHTML = "E. The reverse string is: " + reverseString;
+
+        // Find the date
+        const currentdate = date();
+        
+        document.getElementById("date").innerHTML = "F. The current date is: " + currentdate;
+        </script>
+
+</body>
+</html>

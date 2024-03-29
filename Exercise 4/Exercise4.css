@@ -1,0 +1,33 @@
+.box{
+    width: 600px; /* Adjust width as needed */
+    height: 180px; /* Adjust height as needed */
+    border: 2px solid grey; /* Border style */
+    padding: 10px; /* Padding inside the box */
+    margin: 5px; /* Margin outside the box */
+    /* Additional styling (optional) */
+    box-shadow: 2px 2px 5px rgba(234, 230, 230, 0.1); 
+}
+
+#calculateButtonRow {
+    margin-bottom: 15px; /* Add margin-top to position the button */
+    margin-top: 15px; /* Add margin-top to position the button */
+}
+
+#calculateButtonRow:hover {
+    border: 2px solid blue; /* Add border on hover */
+}
+
+#calculateBtn:hover{
+    border: 2px solid blue; /* Add border on hover */
+    color: black; /* Change text color on hover */
+    border-radius: 5px;
+}
+
+#calculateBtn{
+    margin-top: 50px; /* Add margin-bottom to position the button */
+}
+
+#displayArea {
+    font-weight: bold; /* Bold text */
+}
+

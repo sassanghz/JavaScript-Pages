@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Array Exercise</title>
+</head>
+<body>
+
+
+    <h1>JavaScript Array</h1>
+
+    <!-- Output placeholders -->
+    <h2>Print the elements of an array using toString()</h2>
+    <div id="outputA"><p></p></div>
+    
+    <h2>Print the elements of an array using join()</h2>
+    <div id="outputB"><p></p></div>
+    <h2>Print the elements of an array in the format of index: value</h2>
+    <div id="outputC"><p></p></div>
+
+    <script>
+        const fruits = ["Banana", "Orange", "Apple", "Mango", 123]; // Define the array
+
+        // A. Print all elements using toString()
+        const printUsingToString = () => {
+            const output = fruits.toString(); // Convert array to string
+            document.getElementById("outputA").innerHTML = "<p>" + output + "</p>"; // Display output inside a <p> tag
+        };
+
+        // B. Print all elements using join()
+        const printUsingJoin = () => {
+            const output = fruits.join("&"); // Join array elements with "&"
+            document.getElementById("outputB").innerHTML = "<p>" + output + "</p>"; // Display output inside a <p> tag
+        };
+
+        // C. Print array in the format of index: value
+        const printWithIndices = () => {
+            let output = "";
+            fruits.forEach((element, index) => {
+                output += index + ": " + element + "<br>"; // Concatenate index and value
+            });
+            document.getElementById("outputC").innerHTML = "<p>" + output + "</p>"; // Display output inside a <p> tag
+        };
+
+        // Call functions to display outputs
+        printUsingToString();
+        printUsingJoin();
+        printWithIndices();
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4</title>
+    <link rel="stylesheet" href="Exercise4.css">
+</head>
+<body>
+    <h3><strong>Order Books Online</strong></h3>
+   
+    <div class="box">
+        <form name="books">
+            <table width="80%" id="alignment">
+                <tr>
+                    <th><strong>Book</strong></th>
+                    <th><strong>Quantity</strong></th>
+                    <th><strong>Price</strong></th>
+                </tr>
+
+                <tr>
+                    <td>Basic Web Programming</td>
+                    <td><input type="number" value="0" id="q1"></td>
+                    <td>$19.99</td>
+                </tr>
+
+                <tr>
+                    <td>Intro to PHP</td>
+                    <td><input type="number" value="0" id="q2"></td>
+                    <td>$86.00</td>
+                </tr>
+
+                <tr>
+                    <td>Advanced JQuery</td>
+                    <td><input type="number" value="0" id="q3"></td>
+                    <td>$55.00</td>
+                </tr>
+
+                <tr id="calculateButtonRow">
+                    <td colspan="3" >
+                        <input type="button" value="Calculate the order" id="calculateBtn" onclick="calculateTotal()">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <div id="displayArea">
+        <p id="item1Display"></p>
+        <p id="item2Display"></p>
+        <p id="item3Display"></p>
+        <p id="totalDisplay"></p>
+    </div>
+
+    <script src="Exercise4.js"></script>
+</body>
+</html>

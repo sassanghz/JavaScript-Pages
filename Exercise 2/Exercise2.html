@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Exercise 2 - Assignment 2</title>
+</head>
+<body>
+    <h1><strong>JavaScript Array</strong></h1>
+
+    <h4><strong>Print the elements of an array using toString()</strong></h4>
+
+    <p id="demo"></p>
+
+    <h4><strong>Print the elements of an array using join()</strong></h4>
+
+    <p id="demo2"></p>
+
+    <h4><strong>Print the elements of an array in the format of index: value</strong></h4>
+
+    <p id="demo3"></p>
+
+    <script>
+        const arryStr = ["Banana", "Orange", "Apple", "Mango"];
+
+        let text = arryStr.toString();
+
+        document.getElementById("demo").innerHTML = text;
+
+        let text2 = arryStr.join("&");
+
+        document.getElementById("demo2").innerHTML = text2;
+
+        let text3 = arryStr.map((value, index) => {
+            return index + ": " + value;
+        });
+
+        document.getElementById("demo3").innerHTML = text3.join("<br>");
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3</title>
+    <script src="Exercise 3.js"></script>
+</head>
+<body>
+
+
+    <h1>JavaScript Functions</h1>
+    <!-- Output placeholders -->
+    <h2>Function A:</h2>
+    <p id="outputA"></p>
+    <h2>Function B:</h2>
+    <p id="outputB"></p>
+    <h2>Function C:</h2>
+    <p id="outputC"></p>
+    <h2>Function D:</h2>
+    <p id="outputD"></p>
+    <h2>Function E:</h2>
+    <p id="outputE"></p>
+    <h2>Function F:</h2>
+    <p id="outputF"></p>
+
+    <script>
+        // Call the functions and display results
+        document.getElementById("outputA").textContent = "Sum of numbers: " + addNumbers([1, 2, 3, 4, 5]);
+        document.getElementById("outputB").textContent = "Max number: " + findMaxNumber(10, 20, 5, 30);
+        document.getElementById("outputC").textContent = "Sum of numbers in mixed array: " + addOnlyNumbers([4, 5, "3.0 birds", true, "birds2"]);
+        document.getElementById("outputD").textContent = "Digits found in string: " + getDigits("abc123xyz456");
+        document.getElementById("outputE").textContent = "Reversed string: " + reverseString("See you later!");
+        document.getElementById("outputF").textContent = "Current date: " + getCurrentDate();
+    </script>
+
+</body>
+</html>

@@ -11,25 +11,25 @@
     <!--Slideshow container-->
     <div class="slideshow">
         
-        <div class="slide">
+        <div class="slide fade">
             <img src="../Exercise 6/First Image.png" style="width: 70%;" alt="Image 1">
         </div>
 
-        <div class="slide">
+        <div class="slide fade">
             <img src="../Exercise 6/Second Image.png" style="width: 70%;" alt="Image 2">
         </div>
 
-        <div class="slide">
+        <div class="slide fade">
             <img src="../Exercise 6/Third Image.png" style="width: 70%;" alt="Image 3">
         </div>
 
-        <div class="slide">
+        <div class="slide fade">
             <img src="../Exercise 6/Fourth Image.png" style="width: 70%;" alt="Image 4"> 
         </div>
         
         <!-- Next and previous buttons -->
-        <a href="#" id="previous">Previous</a>
-        <a href="#" id="next">Next</a>
+        <a class="prev" onclick="plusSlides(-1)">&#10094; Previous</a>
+        <a class="next" onclick="plusSlides(1)">Next &#10095;</a>
     </div>
 
     <!-- The dots/circles -->
@@ -37,6 +37,7 @@
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
     </div>
 
     <p>The first direct detection of gravitational waves is without doubt one of the most remarkable breakthroughs of our time. The<br>

@@ -12,7 +12,7 @@
 .next {
     cursor: pointer;
     position: absolute;
-    bottom: 180px;
+    bottom: 175px;
     left: 60px;
     padding: 10px 45px;
     text-decoration: underline;
@@ -23,7 +23,7 @@
 .prev{
     cursor: pointer;
     position: absolute;
-    bottom: 180px;
+    bottom: 175px;
     left: 10px;
     padding: 10px 15px;
     color: blue;

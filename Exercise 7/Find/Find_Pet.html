@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Find a Dog/Cat</title>
     <link rel="stylesheet" href="../Find/Find_Pet.css">
+    <script src="../Find/Find_Pet.js"></script>
 </head>
 <body>
     <div class="container">
         <h1>Find a Dog/Cat</h1>
-        <form id="petSearchForm">
+        <form name ="myForm" id="petSearchForm" onsubmit="return validateForm()">
             <label for="animalType">Cat or Dog:</label>
             <select id="animalType" name="animalType">
                 <option value="cat">Cat</option>

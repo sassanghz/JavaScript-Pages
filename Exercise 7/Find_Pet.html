@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find a Dog/Cat</title>
+    <link rel="stylesheet" href="../Exercise 7/Find_Pet.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Find a Dog/Cat</h1>
+        <form id="petSearchForm">
+            <label for="animalType">Cat or Dog:</label>
+            <select id="animalType" name="animalType">
+                <option value="cat">Cat</option>
+                <option value="dog">Dog</option>
+            </select>
+
+            <label for="breed">Breed:</label>
+            <input type="text" id="breed" name="breed" placeholder="Enter breed">
+
+            <label for="age">Preferred Age:</label>
+            <select id="age" name="age">
+                <option value="any">Doesn't Matter</option>
+                <option value="young">Young (0-2 years)</option>
+                <option value="adult">Adult (2-7 years)</option>
+                <option value="senior">Senior (7+ years)</option>
+            </select>
+
+            <label for="gender">Preferred Gender:</label>
+            <select id="gender" name="gender">
+                <option value="any">Doesn't Matter</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+
+            <label for="compatibility">Compatibility:</label>
+            <input type="checkbox" id="compatibilityDogs" name="compatibility" value="dogs">
+            <label for="compatibilityDogs">Gets along with other dogs</label>
+            <br>
+            <input type="checkbox" id="compatibilityCats" name="compatibility" value="cats">
+            <label for="compatibilityCats">Gets along with other cats</label>
+            <br>
+            <input type="checkbox" id="compatibilityChildren" name="compatibility" value="children">
+            <label for="compatibilityChildren">Gets along with small children</label>
+            <br>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Clear">
+        </form>
+    </div>
+</body>
+</html>

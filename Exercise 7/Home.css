@@ -61,16 +61,10 @@ main {
 }
 
 /* Footer styles */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-}
 
 footer a {
     color: #fff;
-    text-decoration: none;
+    text-decoration: underline;
     margin: 0 10px;
     transition: color 0.3s ease;
 }
@@ -78,3 +72,12 @@ footer a {
 footer a:hover {
     color: #ccc;
 }
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+

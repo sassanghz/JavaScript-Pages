@@ -53,3 +53,10 @@ input[type="submit"]:hover,
 input[type="reset"]:hover {
     background-color: #0056b3;
 }
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}

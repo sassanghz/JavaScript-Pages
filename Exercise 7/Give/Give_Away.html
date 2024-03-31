@@ -10,7 +10,7 @@
     <div class="container">
         <h1>Have a Pet to Give Away</h1>
         <p>Please fill out the form below if you have a pet to put up for adoption:</p>
-        <form id="petAdoptionForm">
+        <form id="petAdoptionForm" name="myForm" onsubmit="return validationForm()">
             <label for="animalType">Cat or Dog:</label>
             <select id="animalType" name="animalType">
                 <option value="cat">Cat</option>
@@ -34,7 +34,7 @@
                 <option value="female">Female</option>
             </select>
 
-            <label for="compatibilityDogs">Gets along with other dogs:</label>
+            <label for="compatibility">Gets along with other dogs:</label>
             <input type="checkbox" id="compatibilityDogs" name="compatibilityDogs" value="yes">
 
             <label for="compatibilityCats">Gets along with other cats:</label>

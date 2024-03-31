@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Care</title>
+    <link rel="stylesheet" href="../Exercise 7/Pet_Care.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pet Care</h1>
+        <p>Select the type of pet care instructions you would like to view:</p>
+        <ul>
+            <li><a href="#dogCare">Dog Care</a></li>
+            <li><a href="#catCare">Cat Care</a></li>
+        </ul>
+        
+        <div id="dogCare" style="display: none;">
+            <h2>Dog Care</h2>
+            <p>Here are some general instructions on how to care for your dog:</p>
+            <ul>
+                <li>Provide a balanced diet appropriate for your dog's age, size, and activity level.</li>
+                <li>Ensure regular exercise and mental stimulation.</li>
+                <li>Regular visits to the veterinarian for vaccinations, check-ups, and preventive care.</li>
+                <li>Maintain good dental hygiene by brushing your dog's teeth regularly.</li>
+                <li>Keep your dog's living environment clean and safe.</li>
+            </ul>
+            <p>For more detailed information, you can visit <a href="https://www.akc.org/dog-care/" target="_blank">American Kennel Club - Dog Care</a>.</p>
+        </div>
+        
+        <div id="catCare" style="display: none;">
+            <h2>Cat Care</h2>
+            <p>Here are some general instructions on how to care for your cat:</p>
+            <ul>
+                <li>Provide a balanced diet appropriate for your cat's age, size, and activity level.</li>
+                <li>Ensure regular exercise and playtime to keep your cat active and healthy.</li>
+                <li>Regular visits to the veterinarian for vaccinations, check-ups, and preventive care.</li>
+                <li>Keep your cat's litter box clean and provide a comfortable living environment.</li>
+                <li>Offer scratching posts and toys to satisfy your cat's natural behaviors.</li>
+            </ul>
+            <p>For more detailed information, you can visit <a href="https://www.aspca.org/pet-care/cat-care" target="_blank">ASPCA - Cat Care</a>.</p>
+        </div>
+    </div>
+    
+    <script>
+        // JavaScript to toggle visibility of content based on user selection
+        document.querySelectorAll('ul li a').forEach(function(link) {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                var targetId = this.getAttribute('href').substring(1);
+                document.querySelectorAll('.container div').forEach(function(div) {
+                    if (div.id === targetId) {
+                        div.style.display = 'block';
+                    } else {
+                        div.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

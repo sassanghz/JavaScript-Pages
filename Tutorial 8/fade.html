@@ -1,10 +1,28 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>JavaScript Dynamic</title>
-        <script src="../Tutorial 8/fade.js"></script>
-    </head>
-    <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fade Effect</title>
+    <style>
+        /* Optional CSS styling */
+        .fade-element {
+            width: 200px;
+            height: 200px;
+            background-color: #FFFF11; /* Initial background color */
+        }
+    </style>
+</head>
+<body>
+    <!-- Element to apply fade effect to -->
+    <div id="myElement" class="fade-element">
+        This is the element to apply the fade effect to.
+    </div>
 
-    </body>
+    <!-- Button to trigger the fade effect -->
+    <button onclick="fade('myElement')">Start Fade Effect</button>
+
+    <!-- Include your JavaScript file containing the fade function -->
+    <script src="../Tutorial 8/fade.js"></script>
+</body>
 </html>
